@@ -1,0 +1,285 @@
+/* Layout
+--------------------------*/
+
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../img/capa.png),
+    url(../img/ruido.png),
+    linear-gradient(50deg,rgb(10, 10, 10), rgb(41, 0, 87));
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navegação
+--------------------------*/
+
+.navbar-transparent {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(95, 236, 247);
+    transition: 0.1s;
+
+}
+
+.divised {
+    width: 1px;
+    background: #fff;
+    margin: 12px 15px;
+}
+
+/* Global
+------------*/
+
+.caixa {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Capa
+----------------------------*/
+
+.capa {
+    text-align: center;
+}
+
+/* Serviços
+--------------------*/
+#servicos {
+    background: #fff;
+}
+
+/* Serviços conteudo
+-------------------------- */
+.albuns {
+    padding: 10px 0;
+}
+
+/* Footer
+-------------------- */
+footer {
+    background: #000;
+    position: relative;
+    padding: 20px;
+}
+
+footer h4 {
+    font-size: 1em;
+    color: gray;
+}
+
+footer a {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer a:hover {
+    color: rgb(95, 236, 247);
+    text-decoration: none;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    list-style: none;
+    float: right;
+    margin: 0 10px;
+}
+
+
+/* Tipografia
+---------------------- */
+
+ h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+#servicos h2, h3 {
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    letter-spacing: -0.04em;
+}
+
+#servicos h2 {
+    font-size: 3em;
+}
+
+#recursos h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#recursos p,h2 {
+    color: white;
+}
+
+#recursos h3 {
+    color: rgb(255, 187, 0);
+}
+
+/* Recursos
+---------------*/
+
+.rotacionar {
+    transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    padding-left: 80px;
+}
+
+
+
+/* Botões
+----------------------------*/
+
+.btn-custom {
+    color: #fff;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius-: 500px;
+    transition: 0.4s;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+.btn-transparent {
+    border: 2px solid #fff;
+}
+
+.btn-transparent:hover {
+    color: #000;
+    background: white;
+    border: 2px solid #fff;
+    transition: 0.4s;
+}
+
+.btn-red {
+    background: rgb(255, 0, 0);
+}
+
+.btn-red:hover {
+    background: rgb(192, 1, 1);
+    color: #fff;
+}
+
+/* Media Query's
+---------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px */
+@media (max-width: 576.98px) {
+    .btn-custom {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+
+    footer {
+        padding-bottom: 180px;
+    }
+
+    footer .col-md-4 ul li a img {
+        width: 40px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    footer .col-md-4 ul li a img {
+        width: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    footer {
+        padding-top: 150px;
+        padding-bottom: 350px;
+    }
+
+    footer .col-md-2 .navbar-nav li {
+        margin-bottom: 20px;
+    }
+
+    footer .col-md-4 ul li {
+        margin: 0 5px;
+    }
+    
+    footer .col-md-4 ul li a img {
+        width: 40px;
+    }
+
+    footer .navbar-nav li a {
+        font-size: 0.75em;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 6em;
+    }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 7em;
+    }
+
+
+
+}
+
+@media (min-height: 1180px) {
+    
+    footer {
+        padding-bottom: 500px;
+    }
+
+}
+
+@media (min-height: 1360px) {
+    
+    footer {
+        padding-bottom: 700px;
+    }
+
+}
+
+/* Serviços
+-------------------- */
